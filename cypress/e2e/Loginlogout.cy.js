@@ -7,7 +7,7 @@ describe('Testcase for login logout ', () => {
 
     beforeEach(function () {
         cy.fixture('example').then(function (data) {
-            globalThis.data = data;
+            globalThis.data = data
         })
     })
 
