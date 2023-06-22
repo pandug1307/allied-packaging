@@ -18,7 +18,7 @@ class Userprofile_PO {
 		cy.get('.mat-option-text').contains('zoho', {matchCase:true}).click();
 		cy.wait(2000);
 		cy.get('.mat-primary > .mat-button-wrapper').click({force:true});		
-		cy.wait(5000);
+		cy.wait(7000);
 		cy.log('Profile successfully updated');    
 
         }        

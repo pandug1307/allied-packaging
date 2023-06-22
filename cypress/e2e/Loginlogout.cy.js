@@ -18,7 +18,7 @@ describe('Testcase for login logout ', () => {
 
     it('Verify Valid credentials', () => {
 		loginlogout_PO.navigate(globalThis.data.login_URL);
-        loginlogout_PO.verify_validLogin(globalThis.data.valid_username, globalThis.data.valid_username);
+        loginlogout_PO.verify_validLogin(globalThis.data.valid_username, globalThis.data.valid_password);
 		loginlogout_PO.dashboard();
         loginlogout_PO.logout();
     });

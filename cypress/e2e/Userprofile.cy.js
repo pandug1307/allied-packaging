@@ -15,7 +15,7 @@ describe('Testcase for User Profile', () => {
 
     it('Verify user able to update their Profile', () => {
 		loginlogout_PO.navigate(globalThis.data.login_URL);
-        loginlogout_PO.verify_validLogin(globalThis.data.login_username,globalThis.data.login_password);
+        loginlogout_PO.verify_validLogin(globalThis.data.valid_username,globalThis.data.valid_password);
         loginlogout_PO.dashboard();
         userprofile_PO.updateDetails(globalThis.data.first_name,globalThis.data.last_name,globalThis.data.phone_no);
         loginlogout_PO.logout();

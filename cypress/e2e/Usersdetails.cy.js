@@ -15,7 +15,7 @@ describe('Testcase for Edit User details',() =>{
 
 it('Verify the user edit details',()=>{
         loginlogout_PO.navigate(globalThis.data.login_URL);
-        loginlogout_PO.verify_validLogin(globalThis.data.login_username, globalThis.data.login_password);
+        loginlogout_PO.verify_validLogin(globalThis.data.valid_username, globalThis.data.valid_password);
         loginlogout_PO.dashboard();
         userdetails_PO.UserNavigate();
         userdetails_PO.EditUserDetails(globalThis.data.f_name, globalThis.data.l_name, globalThis.data.phoneNo);
