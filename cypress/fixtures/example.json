@@ -4,8 +4,11 @@
   "phone_no": "(111) 111-1111",
   
   "login_URL": "http://168.61.189.83/#/login",
-  "login_username": "umesh.pandey@softwebsolutions.com",
-  "login_password": "Hello@#123",
+  "valid_username": "umesh.pandey@softwebsolutions.com",
+  "valid_password": "Hello@#123",
+
+  "invalid_username": "allied.packagingqa@mailinator.com",
+  "invalid_password": "Softweb123",
 
   "f_name": "Testing",
   "l_name": "Testing",

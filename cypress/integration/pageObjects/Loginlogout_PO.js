@@ -7,7 +7,22 @@ class Loginlogout_PO {
 		cy.title().should('eq', this.title);
 	}
 	
-    login(username, password) {
+	verify_InvalidLogin(username, password) {
+		cy.wait(2000);
+		cy.get('#mat-input-0').clear().type(username);
+		cy.wait(1000);
+		cy.get('#mat-input-1').clear().type(password);
+		cy.wait(1000);
+		//cy.get('.mat-checkbox-inner-container').check;
+		//cy.wait(1000);
+		cy.get(':nth-child(6) > .mat-focus-indicator > .mat-button-wrapper').click();
+		cy.wait(2000);
+		cy.get('.ng-trigger > .ng-tns-c8-2')
+		.should('be.visible')
+		.and("contain", "Email or Password is not valid")
+	}
+
+    verify_validLogin(username, password) {
     cy.wait(2000);
 	cy.get('#mat-input-0').clear().type(username);
 	cy.wait(1000);

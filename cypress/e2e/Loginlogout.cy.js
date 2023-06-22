@@ -11,9 +11,14 @@ describe('Testcase for login logout ', () => {
         })
     })
 
-    it('Should be able to login and logout', () => {
+    it('Verify Invalid credentials', () => {
 		loginlogout_PO.navigate(globalThis.data.login_URL);
-        loginlogout_PO.login(globalThis.data.login_username, globalThis.data.login_password);
+        loginlogout_PO.verify_InvalidLogin(globalThis.data.invalid_username, globalThis.data.invalid_password);
+    });
+
+    it('Verify Valid credentials', () => {
+		loginlogout_PO.navigate(globalThis.data.login_URL);
+        loginlogout_PO.verify_validLogin(globalThis.data.valid_username, globalThis.data.valid_username);
 		loginlogout_PO.dashboard();
         loginlogout_PO.logout();
     });
