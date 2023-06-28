@@ -2,7 +2,7 @@ class Userprofile_PO {
     updateDetails(fname, lname, PhoneNo)
     {
         cy.get('.hidden-xs').click({force:true});
-        cy.wait(2000);
+        cy.wait(5000);
 		cy.get('[href="#/user-profile"]').click();
         cy.wait(7000);
        	cy.get('#mat-input-6').focus().clear().type(fname);

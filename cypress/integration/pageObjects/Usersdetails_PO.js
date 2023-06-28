@@ -34,7 +34,7 @@ class Usersdetails_PO{
         //cy.get('#mat-checkbox-13').click({force:true});
         //cy.wait(500);
         cy.get('.mat-button-wrapper').eq(1).click({force:true});
-        cy.wait(3000);
+        cy.wait(5000);
         cy.get('#toast-container').then(($msg)=>{
             cy.log($msg.text());
         });
