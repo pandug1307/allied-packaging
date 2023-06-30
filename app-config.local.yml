@@ -1,9 +1,0 @@
-stages:
-  - test
-
-test:
-    image: cypress/browsers:node18.16.0-chrome114
-    stage: test
-    script:
-    - npm ci
-    - npm run runOnChrome
