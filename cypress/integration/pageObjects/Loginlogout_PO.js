@@ -15,7 +15,8 @@ class Loginlogout_PO {
 		cy.wait(1000);
 		//cy.get('.mat-checkbox-inner-container').check;
 		//cy.wait(1000);
-		cy.get(':nth-child(6) > .mat-focus-indicator > .mat-button-wrapper').click();
+		cy.xpath('//span[@class="mat-button-wrapper" and text()="Sign In"]').click();
+		//cy.get(':nth-child(6) > .mat-focus-indicator > .mat-button-wrapper').click();
 		cy.wait(2000);
 		cy.get('.ng-trigger > .ng-tns-c8-2')
 		.should('be.visible')
@@ -30,7 +31,7 @@ class Loginlogout_PO {
 	cy.wait(1000);
 	cy.get('.mat-checkbox-inner-container').check;
 	cy.wait(1000);
-	cy.get('//span[@class="mat-button-wrapper" and text()="Sign In"]').click();
+	cy.xpath('//span[@class="mat-button-wrapper" and text()="Sign In"]').click();
 	//cy.get(':nth-child(6) > .mat-focus-indicator > .mat-button-wrapper').click();
 	cy.wait(4000);
 	cy.get('#toast-container').then(($msg)=>{
