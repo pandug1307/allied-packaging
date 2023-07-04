@@ -27,3 +27,5 @@
 //Cypress.Commands.add('navigateTo_Dashboardpage', =>{
     //cy.visit("/dashboard");
 //})
+
+/// <reference types="cypress-xpath"/>

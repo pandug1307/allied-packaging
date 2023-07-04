@@ -30,7 +30,8 @@ class Loginlogout_PO {
 	cy.wait(1000);
 	cy.get('.mat-checkbox-inner-container').check;
 	cy.wait(1000);
-	cy.get(':nth-child(6) > .mat-focus-indicator > .mat-button-wrapper').click();
+	cy.get('//span[@class="mat-button-wrapper" and text()="Sign In"]').click();
+	//cy.get(':nth-child(6) > .mat-focus-indicator > .mat-button-wrapper').click();
 	cy.wait(4000);
 	cy.get('#toast-container').then(($msg)=>{
 		cy.log($msg.text());
