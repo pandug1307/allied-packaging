@@ -1,5 +1,3 @@
-//import { get } from "lodash";
-
 class Usersdetails_PO{
     UserNavigate(){
         cy.get('.icon-sidebar').eq(1).click();

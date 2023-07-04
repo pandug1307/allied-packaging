@@ -1,4 +1,5 @@
 /// <reference types="Cypress"/>
+/// <reference types="cypress-xpath"/>
 
 import Loginlogout_PO from "../integration/pageObjects/Loginlogout_PO"
 import Userprofile_PO from "../integration/pageObjects/Userprofile_PO"
